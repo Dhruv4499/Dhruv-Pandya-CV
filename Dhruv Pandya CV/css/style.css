@@ -1,0 +1,991 @@
+ @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
+
+ * {
+     margin: 0;
+     padding: 0;
+     font-family: 'Poppins', sans-serif;
+     box-sizing: border-box;
+ }
+
+ html {
+     scroll-behavior: smooth;
+ }
+
+ body {
+     background-color: #080808;
+     color: #fff;
+ }
+
+ img {
+     width: 100%;
+ }
+
+ a {
+     text-decoration: none;
+ }
+
+ li {
+     list-style: none;
+ }
+
+ .container {
+     width: 1300px;
+     margin: 0 auto;
+     padding: 10px;
+ }
+
+ /* Header Section */
+ .header .cover {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .header .logo {
+     padding: 20px 0;
+     font-size: 40px;
+ }
+
+ .header .logo_link {
+     color: #15b6c4;
+ }
+
+ .header .menu {
+     display: flex;
+ }
+
+ .header .nav_link {
+     padding: 20px;
+ }
+
+ .header .nav_item {
+     font-size: 20px;
+     position: relative;
+     color: white;
+ }
+
+ .header .nav_item:after {
+     content: '';
+     width: 0%;
+     height: 3px;
+     background-color: #15b6c4;
+     position: absolute;
+     left: 0;
+     bottom: -6px;
+     transition: all 0.3s ease-in-out;
+ }
+
+ .header .nav_item:hover:after {
+     width: 100%;
+ }
+
+ .header .burger_nav {
+     display: none;
+ }
+
+ .header .burger_nav .fa-solid {
+     display: none;
+ }
+
+ /* Home Section  */
+ .main .cover {
+     padding: 90px 0;
+ }
+
+ .main .profession {
+     font-size: 26px;
+     padding: 10px 0;
+ }
+
+ .main .about_you {
+     font-size: 40px;
+ }
+
+ .main .about_you span {
+     color: #15b6c4;
+ }
+
+ /* about section */
+ .about_section .cover {
+     display: flex;
+     width: 100%;
+ }
+
+ .about_section .cover .profile {
+     width: 40%;
+ }
+
+ .about_section .cover .profile img {
+     border-radius: 20px;
+ }
+
+ .about_section .about_me {
+     padding: 10px 60px;
+     width: 60%;
+ }
+
+ .about_section .about_me_title {
+     font-size: 50px;
+     letter-spacing: 1px;
+     font-weight: 500;
+ }
+
+ .about_section .about_me_description {
+     margin-top: 10px;
+     font-size: 17px;
+     letter-spacing: 0.6px;
+     line-height: 22px;
+ }
+
+ .about_section .tab-titles {
+     margin: 20px 0 40px 0;
+     display: flex;
+ }
+
+ .about_section .tab_links {
+     margin-right: 50px;
+     font-size: 18px;
+     font-weight: 500;
+     cursor: pointer;
+     position: relative;
+ }
+
+ .about_section .tab_links.active:after {
+     content: '';
+     width: 70%;
+     height: 3px;
+     background-color: #15b6c4;
+     position: absolute;
+     left: 0;
+     bottom: -6px;
+     transition: all 0.3s ease-in-out;
+ }
+
+ .about_section .tab_links:after {
+     content: '';
+     width: 0%;
+     height: 3px;
+     background-color: #15b6c4;
+     position: absolute;
+     left: 0;
+     bottom: -6px;
+     transition: all 0.3s ease-in-out;
+ }
+
+ .about_section .tab_links:hover:after {
+     width: 70%;
+ }
+
+ .about_section .tab-content {
+     display: none;
+ }
+
+ .about_section .tab-content.active-tab {
+     display: block;
+ }
+
+ .about_section .tab-content ul li {
+     margin: 10px 0;
+     line-height: 25px;
+ }
+
+ .about_section .tab-content ul li span {
+     color: #15b6c4;
+     font-size: 15px;
+     font-weight: 500;
+ }
+
+ /* Services section */
+ .services_section .title {
+     font-size: 50px;
+     font-weight: 500;
+     letter-spacing: 1px;
+ }
+
+ .services_section .service_list {
+     display: flex;
+     /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+     grid-gap: 40px; */
+     flex-wrap: wrap;
+     margin-top: 50px;
+ }
+
+ .services_section .service_list .myservice {
+     background-color: #262626;
+     padding: 40px;
+     font-size: 14px;
+     font-weight: 300;
+     border-radius: 10px;
+     transition: all 0.3s ease;
+     width: calc(33.33% - 40px);
+     margin: 0 10px;
+ }
+
+ .services_section .service_list .myservice:hover {
+     background-color: #15b6c4;
+     transform: translateY(-10px);
+ }
+
+ .services_section .service_list .myservice i {
+     font-size: 45px;
+     margin-bottom: 20px;
+ }
+
+ .services_section .service_list .service_title {
+     font-size: 30px;
+     font-weight: 500;
+     margin-bottom: 15px;
+ }
+
+ .services_section .service_list .sercive_details {
+     margin-bottom: 20px;
+     letter-spacing: 0.7px;
+ }
+
+ .services_section .service_list .service_link {
+     color: white;
+     font-size: 13px;
+ }
+
+ /* Contact Section */
+ .contact_section .row {
+     display: flex;
+ }
+
+ .left_contact {
+     width: 35%;
+ }
+
+ .contact_section .row .contact_title {
+     font-size: 50px;
+     font-weight: 500;
+     letter-spacing: 1px;
+ }
+
+ .contact_section .row p {
+     margin: 30px 0;
+     font-size: 16px;
+     letter-spacing: 1px;
+ }
+
+ .contact_section .row p a {
+     color: #fff;
+ }
+
+ .contact_section .row p i {
+     margin-right: 15px;
+     color: #15b6c4;
+     font-size: 16px;
+ }
+
+ .social_media {
+     margin-bottom: 30px;
+ }
+
+ .social_media a {
+     font-size: 30px;
+     margin-right: 15px;
+     color: #fff;
+     display: inline-block;
+     transition: all 0.3s;
+ }
+
+ .social_media a:hover {
+     color: #15b6c4;
+     transform: translateY(-5px);
+ }
+
+ .contact_section .btn {
+     margin-top: 30px;
+     padding: 10px 20px;
+     color: white;
+     background-color: darkturquoise;
+     border-radius: 5px;
+     cursor: pointer;
+ }
+
+ .right_contact {
+     width: 65%;
+ }
+
+ .right_contact form {
+     width: 100%;
+ }
+
+ .right_contact input,
+ .right_contact textarea {
+     width: 100%;
+     border: 0;
+     outline: none;
+     background-color: #262626;
+     padding: 15px;
+     margin: 15px 0;
+     font-size: 18px;
+     color: #fff;
+     border-radius: 6px;
+     resize: none;
+ }
+
+ .right_contact .btn.btn1 {
+     padding: 14px 60px;
+     font-size: 18px;
+     margin-top: 20px;
+ }
+
+ /* Footer Section */
+ .footer .copyright .copy {
+     width: 100%;
+     background-color: #262626;
+     color: #fff;
+     text-align: center;
+     padding: 25px 0;
+     margin-top: 20px;
+     font-weight: 300;
+ }
+
+ .footer .copyright .copy a {
+     color: #15b6c4;
+ }
+
+
+ @media (max-width: 1024px) {
+
+     .header .container,
+     .container {
+         width: 950px;
+         margin: 0 auto;
+         padding: 10px 30px;
+     }
+
+     /* About Section */
+
+     .about_section .cover {
+         display: block;
+         width: 100%;
+         padding: 80px 0;
+     }
+
+     .about_section .cover .profile img {
+         width: 100%;
+         margin: 0 auto;
+     }
+
+     .about_section .cover .profile {
+         width: 100%;
+         max-width: 700px;
+         margin: 0 auto;
+     }
+
+     .about_section .about_me {
+         padding: 10px 40px;
+         width: 100%;
+     }
+
+     .about_section .about_me_title {
+         letter-spacing: 1px;
+         font-weight: 500;
+         text-align: center;
+     }
+
+     .about_section .about_me_description {
+         margin-top: 10px;
+         font-size: 16px;
+         line-height: 1.5;
+     }
+
+     .about_section .tab-titles {
+         margin: 20px 0 30px 0;
+         display: flex;
+         justify-content: space-between;
+     }
+
+     .about_section .tab_links {
+         font-size: 20px;
+         font-weight: 500;
+         cursor: pointer;
+         position: relative;
+     }
+
+     .about_section .tab-content ul li {
+         font-size: 18px;
+         margin: 10px 0;
+         line-height: 1.6;
+     }
+
+     /* Services Section */
+
+     .services_section .service_list .myservice {
+         background-color: #262626;
+         padding: 30px;
+         font-size: 14px;
+         font-weight: 300;
+         border-radius: 10px;
+         transition: all 0.3s ease;
+         width: calc(50% - 20px);
+         margin: 10px;
+     }
+
+     .services_section .title {
+         font-weight: 500;
+         letter-spacing: 1px;
+         text-align: center;
+     }
+
+     .services_section .service_list .myservice i {
+         font-size: 40px;
+         margin-bottom: 20px;
+     }
+
+     .services_section .service_list .service_title {
+         font-size: 30px;
+         font-weight: 500;
+         margin-bottom: 15px;
+     }
+
+     .services_section .service_list .sercive_details {
+         margin-bottom: 18px;
+         letter-spacing: 0px;
+         line-height: 22px;
+         font-size: 16px;
+     }
+
+     /* Contact Section */
+     .contact_section .row {
+         display: block;
+     }
+
+     .contact_section .left_contact {
+         width: 100%;
+     }
+
+     .contact_section .row .contact_title {
+         font-size: 50px;
+         font-weight: 500;
+         letter-spacing: 1px;
+         text-align: center;
+     }
+
+     .contact_section .row p {
+         margin: 30px 0;
+         font-size: 18px;
+         letter-spacing: 1px;
+     }
+
+     .contact_section .btn {
+         margin-top: 30px;
+         padding: 10px 20px;
+         color: white;
+         background-color: darkturquoise;
+         border-radius: 5px;
+         cursor: pointer;
+         font-size: 18px;
+     }
+
+     .contact_section .right_contact {
+         width: 100%;
+         margin-top: 30px;
+         text-align: center;
+     }
+
+     .right_contact input,
+     .right_contact textarea {
+         width: 100%;
+         border: 0;
+         outline: none;
+         background-color: #262626;
+         padding: 15px;
+         margin: 15px 0;
+         font-size: 16px;
+         color: #fff;
+         border-radius: 6px;
+         resize: none;
+     }
+
+     .contact_section .right_contact .btn.btn1 {
+         padding: 14px 60px;
+         font-size: 20px;
+         margin-top: 20px;
+     }
+
+     /* Footer Section */
+     .footer .copyright .copy {
+         width: 100%;
+         background-color: #262626;
+         color: #fff;
+         text-align: center;
+         padding: 25px 0;
+         margin-top: 20px;
+         font-weight: 300;
+         font-size: 20px;
+     }
+
+ }
+
+ @media (max-width: 768px) {
+     .container {
+         max-width: 700px;
+         width: 100%;
+         margin: 0 auto;
+         padding: 10px;
+     }
+
+     h1 {
+         font-size: 45px;
+     }
+
+     /* Header Section */
+     .header .logo {
+         padding: 10px 0;
+         font-size: 30px;
+     }
+
+     /* Home Section */
+     .home_section .profession {
+         font-size: 24px;
+         padding: 10px 0;
+     }
+
+     /* About Section */
+     .about_section .cover {
+         display: block;
+         width: 100%;
+         padding: 80px 0;
+     }
+
+     .about_section .cover .profile img {
+         width: 100%;
+         margin: 0 auto;
+     }
+
+     .about_section .cover .profile {
+         width: 100%;
+         max-width: 500px;
+         margin: 0 auto;
+     }
+
+     .about_section .about_me {
+         padding: 10px 40px;
+         width: 100%;
+     }
+
+     .about_section .about_me_title {
+         letter-spacing: 1px;
+         font-weight: 500;
+         text-align: center;
+     }
+
+     .about_section .about_me_description {
+         margin-top: 10px;
+         font-size: 16px;
+         line-height: 1.5;
+     }
+
+     .about_section .tab-titles {
+         margin: 20px 0 30px 0;
+         display: flex;
+         justify-content: space-between;
+     }
+
+     .about_section .tab_links {
+         font-size: 20px;
+         font-weight: 500;
+         cursor: pointer;
+         position: relative;
+     }
+
+     .about_section .tab-content ul li {
+         font-size: 18px;
+         margin: 10px 0;
+         line-height: 1.6;
+     }
+
+     /* Services Section */
+
+     .services_section .service_list .myservice {
+         background-color: #262626;
+         padding: 30px;
+         font-size: 14px;
+         font-weight: 300;
+         border-radius: 10px;
+         transition: all 0.3s ease;
+         width: calc(50% - 20px);
+         margin: 0 10px 10px;
+     }
+
+     .services_section .title {
+         font-weight: 500;
+         letter-spacing: 1px;
+         text-align: center;
+     }
+
+     .services_section .service_list .myservice i {
+         font-size: 40px;
+         margin-bottom: 20px;
+     }
+
+     .services_section .service_list .service_title {
+         font-size: 30px;
+         font-weight: 500;
+         margin-bottom: 15px;
+     }
+
+     .services_section .service_list .sercive_details {
+         margin-bottom: 18px;
+         letter-spacing: 0px;
+         font-size: 16px;
+     }
+
+     /* Contact Section */
+     .contact_section .row {
+         display: block;
+     }
+
+     .contact_section .left_contact {
+         width: 100%;
+     }
+
+     .contact_section .row .contact_title {
+         font-size: 50px;
+         font-weight: 500;
+         letter-spacing: 1px;
+         text-align: center;
+     }
+
+     .contact_section .row p {
+         margin: 30px 0;
+         font-size: 18px;
+         letter-spacing: 1px;
+     }
+
+     .contact_section .btn {
+         margin-top: 30px;
+         padding: 10px 20px;
+         color: white;
+         background-color: darkturquoise;
+         border-radius: 5px;
+         cursor: pointer;
+         font-size: 18px;
+     }
+
+     .contact_section .right_contact {
+         width: 100%;
+         margin-top: 30px;
+         text-align: center;
+     }
+
+     .right_contact input,
+     .right_contact textarea {
+         width: 100%;
+         border: 0;
+         outline: none;
+         background-color: #262626;
+         padding: 15px;
+         margin: 15px 0;
+         font-size: 16px;
+         color: #fff;
+         border-radius: 6px;
+         resize: none;
+     }
+
+     .contact_section .right_contact .btn.btn1 {
+         padding: 14px 60px;
+         font-size: 20px;
+         margin-top: 20px;
+     }
+
+     /* Footer Section */
+     .footer .copyright .copy {
+         width: 100%;
+         background-color: #262626;
+         color: #fff;
+         text-align: center;
+         padding: 20px 0;
+         margin-top: 20px;
+         font-weight: 300;
+         font-size: 20px;
+     }
+
+ }
+
+ @media (max-width: 595px) {
+
+     .container,
+     .header .container {
+         width: 550px;
+         margin: 0 auto;
+         padding: 10px;
+     }
+
+     h1 {
+         font-size: 35px;
+     }
+
+     /* Header Section */
+     .header .nav {
+         display: none;
+     }
+
+     .header .burger_nav {
+         display: block;
+         position: relative;
+     }
+
+     .header .burger_nav .fa-solid {
+         display: block;
+         font-size: 30px;
+     }
+
+     .header .burger_menu {
+         position: fixed;
+         background-color: darkturquoise;
+         width: 200px;
+         height: 100vh;
+         top: 0;
+         right: -250px;
+         padding: 50px 0 0 0;
+         transition: all 0.3s ease;
+     }
+
+     .header .burger_menu.open_menu {
+         right: 0;
+     }
+
+     .header .burger_nav_link {
+         display: block;
+         margin: 25px;
+     }
+
+     .header .burger_nav_link a {
+         color: #fff;
+         font-size: 20px;
+     }
+
+     .header .burger_menu .fa-solid.fa-xmark {
+         position: absolute;
+         top: 20px;
+         right: 20px;
+     }
+
+     /* Home Section */
+
+     .home_section .cover {
+         padding: 80px 0;
+     }
+
+     .home_section .profession {
+         font-size: 20px;
+         padding: 10px 0;
+     }
+
+     .home_section .about_you {
+         font-size: 35px;
+     }
+
+     /* About Section */
+     .about_section .cover {
+         display: block;
+         width: 100%;
+         padding: 80px 0;
+     }
+
+     .about_section .cover .profile img {
+         width: 100%;
+         margin: 0 auto;
+     }
+
+     .about_section .cover .profile {
+         width: 100%;
+         max-width: 450px;
+         margin: 0 auto;
+     }
+
+     .about_section .about_me {
+         padding: 10px 60px;
+         width: 100%;
+     }
+
+     .about_section .about_me_description {
+         margin-top: 10px;
+         font-size: 15px;
+     }
+
+     .about_section .about_me_title {
+         font-size: 40px;
+         letter-spacing: 1px;
+         font-weight: 500;
+         text-align: center;
+     }
+
+     .about_section .tab-titles {
+         margin: 20px 0 40px 0;
+         display: flex;
+         justify-content: space-between;
+     }
+
+     .about_section .tab_links {
+         margin-right: 50px;
+         font-size: 15px;
+         font-weight: 500;
+         cursor: pointer;
+         position: relative;
+     }
+
+     .about_section .tab-content ul li {
+         font-size: 15px;
+         margin: 10px 0;
+     }
+
+     /* Services Section */
+
+     .main .services_section .cover {
+         margin-bottom: 50px;
+         padding: 0;
+     }
+
+     .services_section .title {
+         text-align: center;
+         font-size: 40px;
+         font-weight: 500;
+         letter-spacing: 1px;
+     }
+
+     .services_section .service_list .myservice {
+         background-color: #262626;
+         padding: 40px;
+         font-size: 14px;
+         font-weight: 300;
+         border-radius: 10px;
+         transition: all 0.3s ease;
+         width: 100%;
+     }
+
+     .service_list .myservice i {
+         font-size: 40px;
+         margin-bottom: 20px;
+     }
+
+     .service_list .service_title {
+         font-size: 25px;
+         font-weight: 500;
+         margin-bottom: 15px;
+     }
+
+     /* Contact section */
+     .contact_section .row {
+         display: block;
+     }
+
+     .contact_section .row .left_contact {
+         margin-bottom: 30px;
+         width: 100%;
+     }
+
+     .contact_section .row .contact_title {
+         font-size: 40px;
+         font-weight: 500;
+         letter-spacing: 1px;
+         text-align: center;
+     }
+
+     .contact_section .row p {
+         margin: 30px 0;
+         font-size: 15px;
+         letter-spacing: 1px;
+     }
+
+     .contact_section .row .social_media a {
+         font-size: 25px;
+         margin-right: 15px;
+         color: #fff;
+         display: inline-block;
+         transition: all 0.3s;
+     }
+
+     .contact_section .row .right_contact {
+         width: 100%;
+     }
+
+     .right_contact form {
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .right_contact input,
+     .right_contact textarea {
+         width: 100%;
+         border: 0;
+         outline: none;
+         background-color: #262626;
+         padding: 15px;
+         margin: 15px 0;
+         font-size: 15px;
+         color: #fff;
+         border-radius: 6px;
+         resize: none;
+     }
+
+     .right_contact .btn.btn1 {
+         padding: 14px 50px;
+         font-size: 15px;
+         margin-top: 20px;
+     }
+
+     /* Footer Section */
+     .footer .copyright .copy {
+         width: 100%;
+         background-color: #262626;
+         color: #fff;
+         text-align: center;
+         padding: 20px 0;
+         margin-top: 20px;
+         font-weight: 300;
+     }
+
+     /* .header .nav {
+        display: none;
+    }
+    .header .burger_nav {
+        display: block;
+    }
+    .header .menu-bars {
+        cursor: pointer;
+    }
+    .header .bars {
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        border-radius: 20px;
+        display: block;
+    } 
+    .header .bars.bar1 {
+        transform: translateY(-5px);
+    }
+    .header .bars.bar3 {
+        transform: translateY(5px);
+    }
+    .header .burger_menu {
+        display: none;
+    }
+    .header .burger_menu.active {
+        display: block;
+    } */
+
+
+ }
+
+ /* @media (max-width: 400px) {
+        .header .container {
+            width: 350px;
+            margin: 0 auto;
+            padding: 10px;
+        }  
+        .header .burger_menu {
+            display: block;
+        }
+        .header .nav {
+            display: none;
+        }
+} */

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhruv</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://kit.fontawesome.com/94f09c714f.js" crossorigin="anonymous"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="cover">
+                <div class="logo_cover">
+                    <p class="logo"><a href="/" class="logo_link">Dhruv</a></p>
+                </div>
+                <nav class="nav">
+                    <ul class="menu">
+                        <li class="nav_link"><a href="#home" class="nav_item">Home</a></li>
+                        <li class="nav_link"><a href="#about" class="nav_item">About</a></li>
+                        <li class="nav_link"><a href="#services" class="nav_item">Services</a></li>
+                        <!-- <li class="nav_link"><a href="#portfolio" class="nav_item">Portfolio</a></li> -->
+                        <li class="nav_link"><a href="#contact" class="nav_item">Contact</a></li>
+                    </ul>
+                </nav>
+                <nav class="burger_nav">
+                    <ul class="burger_menu">
+                        <li class="burger_nav_link"><a href="#home" class="burger_nav_item">Home</a></li>
+                        <li class="burger_nav_link"><a href="#about" class="burger_nav_item">About</a></li>
+                        <li class="burger_nav_link"><a href="#services" class="burger_nav_item">Services</a></li>
+                        <!-- <li class="burger_nav_link"><a href="#portfolio" class="burger_nav_item">Portfolio</a></li> -->
+                        <li class="burger_nav_link"><a href="#contact" class="burger_nav_item">Contact</a></li>
+                        <i class="fa-solid fa-xmark"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars"></i>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <section class="home_section" id="home">
+                <div class="main_home_section cover">
+                    <p class="profession">Web Developer</p>
+                    <!-- <p class="profession">Django Developer</p> -->
+                    <h2 class="about_you">Hey, I am <span>Dhruv</span><br>Pandya from India.</h2>
+                </div>
+            </section>
+            <section class="about_section" id="about">
+                <div class="cover">
+                    <div class="profile">
+                        <img src="img/profile.png" alt="Profile">
+                    </div>
+                    <div class="about_me">
+                        <h1 class="about_me_title">About Me</h1>
+                        <p class="about_me_description">Motivated and talented college student with a strong foundation in web
+                            development and programming. Proficient in Python, Bootstrap, HTML, CSS,
+                            jQuery, and Django, with a passion for creating visually appealing and functional
+                            websites. Quick learner and eager to expand knowledge in the field of web
+                            development through practical experience and continuous learning. Committed
+                            to delivering high-quality work, collaborating effectively with teams, and
+                            exceeding client expectations. Seeking an opportunity to apply and enhance my
+                            skills in a professional setting while contributing to the success of an
+                            organization.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab_links active" data-tab="skills">Skills</p>
+                            <p class="tab_links" data-tab="experience">Experience</p>
+                            <p class="tab_links" data-tab="education">Education</p>
+                        </div>
+                        <div class="tab-content active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                <li><span>Web Developement</span><br>Web app Developement</li>
+                                <li><span>App Developement</span><br>Building Android/iOS apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="experience">
+                            <ul>
+                                <li><span>Fresher</span><br></li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="education">
+                            <ul>
+                                <li><span>2018</span><br>S.S.C</li>
+                                <li><span>2020</span><br>H.S.C</li>
+                                <li><span>2021-2023</span><br>Bacholer's of Computer Applications</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="services_section" id="services">
+                <div class="cover">
+                    <h1 class="title">My Services</h1>
+                    <div class="service_list">
+                        <div class="myservice">
+                            <i class="fa-solid fa-code"></i>
+                            <h2 class="service_title">UI/UX DESIGN</h2>
+                            <p class="sercive_details">Elevate your digital experience with my captivating UI/UX designs. I craft intuitive interfaces that delight users and enhance usability. My thoughtful design approach ensures every interaction is meaningful, leaving a lasting impression on your audience.</p>
+                            <!-- <a href="#" class="service_link">Learn More</a> -->
+                        </div>
+                        <div class="myservice">
+                            <i class="fa-solid fa-crop-simple"></i>
+                            <h2 class="service_title">Web Developement</h2>
+                            <p class="sercive_details">Unlock the potential of your online presence with my expert web development services. I create responsive and user-friendly websites that engage your audience and drive results. From custom solutions to seamless integrations, I'll bring your digital vision to life.</p>
+                            <!-- <a href="#" class="service_link">Learn More</a> -->
+                        </div>
+                        <div class="myservice">
+                            <i class="fa-brands fa-app-store-ios"></i>
+                            <h2 class="service_title">App Developement</h2>
+                            <p class="sercive_details">Transform your ideas into fully functional mobile apps with my cutting-edge app development services. Whether it's iOS or Android, I build apps that combine functionality, aesthetics, and performance to deliver seamless user experiences.</p>
+                            <!-- <a href="#" class="service_link">Learn More</a> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="portfolio_section" id="portfolio"></section>
+            <section class="contact_section" id="contact">
+                <div class="row">
+                    <div class="left_contact">
+                        <h1 class="contact_title">Contact Me</h1>
+                        <p class="contact_mail">
+                            <a href="mailto:dhruvpandya148@gmail.com">
+                                <i class="fa-solid fa-paper-plane"></i>dhruvpandya148@gmail.com
+                            </a>
+                        </p>
+                        <p class="conact_number">
+                            <a href="tel:+917486902405">
+                                <i class="fa-brands fa-whatsapp"></i>+91 7486902405
+                            </a>
+                        </p>
+                        <div class="social_media">
+                            <a href="https://www.instagram.com/dhruv_4499_/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://twitter.com/Dhruvp4499"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/dhruv4499/"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="img/DhruvPandyaCv.pdf" download class="btn btn1">Download CV</a>
+                    </div>
+                    <div class="right_contact">
+                        <form method="post">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" placeholder="Your Message" rows="6" required></textarea>
+                            <button  class="btn btn1" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="copyright">
+            <p class="copy">&copy; 2023 <a href="/">Dhruv.dev</a>. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
